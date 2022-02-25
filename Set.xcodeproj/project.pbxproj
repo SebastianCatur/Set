@@ -16,6 +16,8 @@
 		EC0D2DED27C66B3E00A4DE31 /* SetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0D2DEC27C66B3E00A4DE31 /* SetTests.swift */; };
 		EC0D2DF727C66B3E00A4DE31 /* SetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0D2DF627C66B3E00A4DE31 /* SetUITests.swift */; };
 		EC0D2DF927C66B3E00A4DE31 /* SetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0D2DF827C66B3E00A4DE31 /* SetUITestsLaunchTests.swift */; };
+		EC0D2E0627C765C200A4DE31 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0D2E0527C765C100A4DE31 /* Card.swift */; };
+		EC0D2E0827C765E000A4DE31 /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0D2E0727C765E000A4DE31 /* SetGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		EC0D2DF227C66B3E00A4DE31 /* SetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC0D2DF627C66B3E00A4DE31 /* SetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUITests.swift; sourceTree = "<group>"; };
 		EC0D2DF827C66B3E00A4DE31 /* SetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC0D2E0527C765C100A4DE31 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		EC0D2E0727C765E000A4DE31 /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				EC0D2DD727C66B3600A4DE31 /* SceneDelegate.swift */,
 				EC0D2DD927C66B3600A4DE31 /* ViewController.swift */,
 				EC0D2DDB27C66B3600A4DE31 /* Main.storyboard */,
+				EC0D2E0527C765C100A4DE31 /* Card.swift */,
+				EC0D2E0727C765E000A4DE31 /* SetGame.swift */,
 				EC0D2DDE27C66B3E00A4DE31 /* Assets.xcassets */,
 				EC0D2DE027C66B3E00A4DE31 /* LaunchScreen.storyboard */,
 				EC0D2DE327C66B3E00A4DE31 /* Info.plist */,
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0D2E0827C765E000A4DE31 /* SetGame.swift in Sources */,
 				EC0D2DDA27C66B3600A4DE31 /* ViewController.swift in Sources */,
 				EC0D2DD627C66B3600A4DE31 /* AppDelegate.swift in Sources */,
 				EC0D2DD827C66B3600A4DE31 /* SceneDelegate.swift in Sources */,
+				EC0D2E0627C765C200A4DE31 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +452,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -471,6 +480,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
