@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     private var chosenCards = [Card]()
     private var matchCards = [Card]()
     private var hasThree = false
+    private var indexArray = [Int]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +74,12 @@ class ViewController: UIViewController {
             for index in matchCards.indices {
                 let match = matchCards[index]
                 if card == match {
-                    game.cards[cardIndex] = game.newCards[index]
+                    if game.newCards.count != 0 {
+                        game.cards[cardIndex] = game.newCards[index]
+                    }
+                    if !indexArray.contains(cardIndex) {
+                        indexArray.append(cardIndex)
+                    }
                 }
             }
         }
@@ -87,7 +93,7 @@ class ViewController: UIViewController {
     private func updateViewFromModel() {
         for index in cardButtons.indices {
             let button = cardButtons[index]
-            if index < game.cards.count {
+            if index < game.cards.count && !game.deckCards.isEmpty{
                 button.alpha = 1.0
                 let card = game.cards[index]
                 button.setTitle(card.icon, for: .normal)
@@ -96,9 +102,17 @@ class ViewController: UIViewController {
                 button.layer.borderColor = UIColor.clear.cgColor
                 button.backgroundColor = .white
             } else {
-                button.alpha = 0.0
+                if game.deckCards.isEmpty {
+                    for matchIndex in indexArray {
+                        cardButtons[matchIndex].alpha = 0.0
+                    }
+                } else {
+                    button.alpha = 0.0
+                }
             }
         }
+
+        indexArray.removeAll()
 
         if game.deckCards.isEmpty || game.cards.count >= 24 {
             dealMoreCardsButton.isEnabled = false

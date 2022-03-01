@@ -60,9 +60,16 @@ class SetGame {
     }
 
     func getThreeNewCards() {
-        for index in 0..<3 {
-            newCards.append(deckCards[index])
-            deckCards.remove(at: index)
+        if deckCards.count > 3 {
+            for index in 0..<3 {
+                newCards.append(deckCards[index])
+                deckCards.remove(at: index)
+            }
+        } else {
+            for index in deckCards.indices {
+                newCards.append(deckCards[index])
+            }
+            deckCards.removeAll()
         }
     }
 
